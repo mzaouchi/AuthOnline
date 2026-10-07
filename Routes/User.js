@@ -13,4 +13,8 @@ userRouter.post('/SignIn', verifSignIn, validation,SignIn)
 
 userRouter.get('/CurrentUser', isAuth,(req, res)=>{res.send(req.user)})
 
+// userRouter.post('/route hedi securisé', isAuth,(req, res)=>{
+//     // tratemen kamel try catch..... add product
+// })
+
 module.exports = userRouter

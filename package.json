@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "concurrently \"npx nodemon Server\" \"cd client && npm start\""
   },
   "keywords": [],
   "author": "",
@@ -15,6 +16,7 @@
   },
   "dependencies": {
     "bcrypt": "^6.0.0",
+    "concurrently": "^10.0.5",
     "dotenv": "^18.0.5",
     "express": "^5.2.1",
     "express-validator": "^7.3.2",
